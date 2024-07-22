@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Minesweeper</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="game-header">Minesweeper</h1>
+            <div class="menu-wrapper">
+                <button class="menu-button">
+                    <div>Easy</div>
+                    <div>6x6</div>
+                    <div>5 &#128163;</div>
+                </button>
+                <button class="menu-button">
+                    <div>Medium</div>
+                    <div>12x12</div>
+                    <div>18 &#128163;</div>
+                </button>
+                <button class="menu-button">
+                    <div>Hard</div>
+                    <div>20x20</div>
+                    <div>50 &#128163;</div>
+                </button>
+            </div>
+        </div>
+        <script>
+            let menu_buttons = Array.from(document.getElementsByClassName("menu-button"));
+            menu_buttons.forEach(btn => {
+                btn.addEventListener("click", function(){
+                    let mode = btn.querySelector("div").innerText;
+                    window.location.href = "game.html?mode=" + mode;
+                })
+            })
+        </script>
+    </body>
+</html>

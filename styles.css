@@ -1,0 +1,106 @@
+table {
+
+  text-align: center;
+  border-radius: 5px;
+  border-collapse: collapse;
+  padding: 40px;
+}
+
+#game-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 40px;
+
+}
+thead td {
+  border-radius: 3px;
+  outline: 1px solid black;
+}
+tbody:before {line-height:1em; content:"\200C"; display:block;}
+
+table tbody td {
+  border: 1px solid #000000;
+  padding: 5px 4px;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+td {
+  width: 20px;
+  height: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  background-color: rgb(200, 199, 199);
+  font-size: 14px;
+  box-shadow: 6px 3px 3px rgb(73, 73, 73);
+}
+
+.game-button {
+  margin: auto;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Times, serif;
+  cursor: pointer;
+}
+#mines-count {
+  margin: auto;
+  font-size: 25px;
+  color: rgb(161, 0, 0);
+  font-weight: bold;
+  font-family: Times, serif;
+  /* background-color: rgb(96, 95, 95); */
+  padding: 0 8px;
+  /* border-radius: 50%; */
+  border-right: 2px solid rgb(113, 113, 113);
+  border-left: 2px solid rgb(113, 113, 113);
+}
+
+body {
+  background-color: gray;
+}
+.game-header {
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 1px 1px rgba(73, 73, 73);
+}
+.menu-button {
+  width: 45%;
+  align-self: center;
+  margin-top: 10%;
+  padding: 15px;
+  border-radius: 50px;
+  box-shadow: 6px 3px 3px rgb(73, 73, 73);
+  border-style: none;
+
+}
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.menu-button > :first-child {
+  margin-bottom: 3%;
+  font-size: large;
+}
+.menu-button > :nth-child(2), .menu-button > :nth-child(3) {
+  font-size: small;
+  color: rgb(74, 74, 74);
+}
